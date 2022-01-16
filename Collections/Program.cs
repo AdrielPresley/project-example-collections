@@ -9,7 +9,7 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            // ******** - Operações com Array - ********
+            // - Operações com Array - 
             int[] arrayInteiros = new int[3];
 
             arrayInteiros[0] = 10;
@@ -32,7 +32,7 @@ namespace Colecoes
                 System.Console.WriteLine(item);
             }
 
-            // ******** - Operações com matriz multidimensional, sendo composta de 4 linhas e 2 colunas - ********
+            // - Operações com matriz multidimensional, sendo composta de 4 linhas e 2 colunas - 
             int[,] matriz = new int[4, 2]
             {
                 { 8, 8 },
@@ -133,7 +133,7 @@ namespace Colecoes
                 System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
             }
 
-            // ******** - Operações com lista - ********
+            // - Operações com lista - 
             ListOperations opLista = new ListOperations();
             List<string> estados = new List<string> { "SP", "MG", "BA" };
             string[] estadosArray = new string[2] { "SC", "MT" };
@@ -150,7 +150,7 @@ namespace Colecoes
 
             opLista.ImprimirListaString(estados);
 
-            // ******** - Operações com Fila - ********
+            // - Operações com Fila -
             Queue<string> fila = new Queue<string>();
             fila.Enqueue("Leonardo");
             fila.Enqueue("Eduardo");
@@ -166,7 +166,7 @@ namespace Colecoes
 
             System.Console.WriteLine($"Pessoas na fila: {fila.Count}");
 
-            // ******** - Operações com Pilha - ********
+            // - Operações com Pilha -
             Stack<string> pilhaLivros = new Stack<string>();
             pilhaLivros.Push(".NET");
             pilhaLivros.Push("DDD");
@@ -181,7 +181,7 @@ namespace Colecoes
 
             System.Console.WriteLine($"Livros para a leitura: {pilhaLivros.Count}");
 
-            // ******** - Operações com Dicionário - ********
+            // - Operações com Dicionário -
             Dictionary<string, string> estadosDicionario = new Dictionary<string, string>();
 
             estadosDicionario.Add("SP", "São Paulo");
@@ -199,7 +199,7 @@ namespace Colecoes
             //var teste = estadosDicionario["SC"];
 
             // Obter um valor no dicionário de forma segura
-            if (estadosDicionario.TryGetValue(valorProcuradoDicionario, out string estadoEncontrado))
+            if (estadosDicionario.TryGetValue(valorProcuradoDicionario, out var estadoEncontrado))
             {
                 System.Console.WriteLine(estadoEncontrado);
             }
@@ -228,7 +228,7 @@ namespace Colecoes
             System.Console.WriteLine("Valor atualizado:");
             System.Console.WriteLine(estadosDicionario[valorProcuradoDicionario]);            
 
-            // ******** - Operações com LINQ - ********
+            // - Operações com LINQ -
             int[] arrayNumeros = new int[10] { 100, 1, 4, 0, 8, 15, 19, 19, 4, 100 };
 
             var minimo = arrayNumeros.Min();
