@@ -1,7 +1,7 @@
 ﻿
 using System.Linq;
 using System.Collections.Generic;
-using Colecoes.Helper;
+using Collections.Helper;
 
 namespace Colecoes
 {
@@ -134,7 +134,7 @@ namespace Colecoes
             }
 
             // ******** - Operações com lista - ********
-            OperacoesLista opLista = new OperacoesLista();
+            ListOperations opLista = new ListOperations();
             List<string> estados = new List<string> { "SP", "MG", "BA" };
             string[] estadosArray = new string[2] { "SC", "MT" };
 
