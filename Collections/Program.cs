@@ -51,7 +51,7 @@ namespace Colecoes
             }
 
             // Utilizando a classe OperacoesArray, que contém métodos auxiliares
-            OperacoesArray op = new OperacoesArray();
+            ArrayOperations op = new ArrayOperations();
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
             int[] arrayCopia = new int[10];
 
